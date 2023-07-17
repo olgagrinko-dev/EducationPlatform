@@ -6,4 +6,4 @@ interface iUser {
     pwd: string
 }
 
-export {iUser}
+export { iUser }
