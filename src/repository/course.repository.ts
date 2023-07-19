@@ -9,30 +9,51 @@ async function getAllCourseDB() {
 
 async function getCourseIdDB(id: string) {
     const client = await pool.connect();
-    const sql = 'SELECT FROM courses where id = $1';
+    const sql = 'SELECT * FROM courses where id = $1';
     const result = (await client.query(sql, [id])).rows;
     return result;
 }
 
 async function createCourseDB(course: string) {
     const client = await pool.connect();
-    const sql = 'INSERT INTO courses(course) values ($1) returning *';
-    const result = (await client.query(sql, [course])).rows;
-    return result;
+    try {
+        await client.query('BEGIN');
+        const sql = 'INSERT INTO courses(course) values ($1) returning *';
+        const result = (await client.query(sql, [course])).rows;
+        await client.query('COMMIT');
+        return result;
+    } catch (error) {
+        await client.query('ROLBACK');
+        return [];
+    }
 }
 
-async function upDataCourseDB (id: string, course: string) {
+async function upDataCourseDB(id: string, course: string) {
     const client = await pool.connect();
-    const sql = 'UPDATE courses set course = $1 where id = $2 returning *';
-    const result = (await client.query(sql, [course, id])).rows;
-    return result;  
+    try {
+        await client.query('BEGIN');
+        const sql = 'UPDATE courses set course = $1 where id = $2 returning *';
+        const result = (await client.query(sql, [course, id])).rows;
+        await client.query('COMMIT');
+        return result;
+    } catch (error) {
+        await client.query('ROLBACK');
+        return [];
+    }
 }
 
-async function deleteCourseByIdDB (id: string) {
+async function deleteCourseByIdDB(id: string) {
     const client = await pool.connect();
-    const sql = 'DELETE from courseswhere id = $1 returning *';
-    const result = (await client.query(sql, [id])).rows;
-    return result;
+    try {
+        await client.query('BEGIN');
+        const sql = 'DELETE from courses where id = $1 returning *';
+        const result = (await client.query(sql, [id])).rows;
+        await client.query('COMMIT');
+        return result;
+    } catch (error) {
+        await client.query('ROLBACK');
+        return [];
+    }
 }
 
 export { getAllCourseDB, getCourseIdDB, createCourseDB, upDataCourseDB, deleteCourseByIdDB };
