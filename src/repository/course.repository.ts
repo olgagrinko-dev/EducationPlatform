@@ -1,20 +1,21 @@
 import { pool } from '../db';
+import { iCourse } from '../interfaces';
 
-async function getAllCourseDB() {
+async function getAllCourseDB(): Promise<iCourse[]> {
     const client = await pool.connect();
     const sql = 'SELECT * FROM courses';
     const result = (await client.query(sql)).rows;
     return result;
 }
 
-async function getCourseIdDB(id: string) {
+async function getCourseIdDB(id: string): Promise<iCourse[]> {
     const client = await pool.connect();
     const sql = 'SELECT * FROM courses where id = $1';
     const result = (await client.query(sql, [id])).rows;
     return result;
 }
 
-async function createCourseDB(course: string) {
+async function createCourseDB(course: string): Promise<iCourse[]> {
     const client = await pool.connect();
     try {
         await client.query('BEGIN');
@@ -28,7 +29,7 @@ async function createCourseDB(course: string) {
     }
 }
 
-async function upDataCourseDB(id: string, course: string) {
+async function upDataCourseDB(id: string, course: string): Promise<iCourse[]> {
     const client = await pool.connect();
     try {
         await client.query('BEGIN');
@@ -42,7 +43,7 @@ async function upDataCourseDB(id: string, course: string) {
     }
 }
 
-async function deleteCourseByIdDB(id: string) {
+async function deleteCourseByIdDB(id: string): Promise<iCourse[]> {
     const client = await pool.connect();
     try {
         await client.query('BEGIN');
