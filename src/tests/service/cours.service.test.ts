@@ -23,7 +23,7 @@ describe('getCourseId:', () => {
         repoFunction.mockResolvedValue([{ id: '1', course: 'js' }]);
         const result = await getCourseId( '1' );
         expect(repoFunction).toHaveBeenCalled();
-        expect(result.length).toBeGreaterThan(0);
+        expect(result.length).toBe(1);
         expect(result).toEqual([{ id: '1', course: 'js' }]);
     })
 })
