@@ -6,36 +6,36 @@ describe('getAllUser:', () => {
         const repoFunction = jest.spyOn(repository, 'getAllUserDB');
         repoFunction.mockResolvedValue([
             {
-                'id': '1',
-                'name': 'TestName',
-                'surname': 'TestSurname',
-                'email': 'test@gmail.com',
-                'pwd': '123'
+                id: '1',
+                name: 'TestName',
+                surname: 'TestSurname',
+                email: 'test@gmail.com',
+                pwd: '123'
             },
             {
-                'id': '2',
-                'name': 'TestName2',
-                'surname': 'TestSurname2',
-                'email': 'test2@gmail.com',
-                'pwd': '456'
+                id: '2',
+                name: 'TestName2',
+                surname: 'TestSurname2',
+                email: 'test2@gmail.com',
+                pwd: '456'
             }
         ]);
         const result = await getAllUser();
         expect(repoFunction).toHaveBeenCalled();
         expect(result).toEqual([
             {
-                'id': '1',
-                'name': 'TestName',
-                'surname': 'TestSurname',
-                'email': 'test@gmail.com',
-                'pwd': '123'
+                id: '1',
+                name: 'TestName',
+                surname: 'TestSurname',
+                email: 'test@gmail.com',
+                pwd: '123'
             },
             {
-                'id': '2',
-                'name': 'TestName2',
-                'surname': 'TestSurname2',
-                'email': 'test2@gmail.com',
-                'pwd': '456'
+                id: '2',
+                name: 'TestName2',
+                surname: 'TestSurname2',
+                email: 'test2@gmail.com',
+                pwd: '456'
             }
         ]);
         expect(result[0].id).toBe('1');
@@ -59,11 +59,11 @@ describe('getUserId:', () => {
         const repoFunction = jest.spyOn(repository, 'getUserIdDB');
         repoFunction.mockResolvedValue([
             {
-                'id': '1',
-                'name': 'TestName',
-                'surname': 'TestSurname',
-                'email': 'test@gmail.com',
-                'pwd': '123'
+                id: '1',
+                name: 'TestName',
+                surname: 'TestSurname',
+                email: 'test@gmail.com',
+                pwd: '123'
             }
         ]);
         const result = await getUserId('1');
@@ -71,11 +71,11 @@ describe('getUserId:', () => {
         expect(result.length).toBe(1);
         expect(result).toEqual([
             {
-                'id': '1',
-                'name': 'TestName',
-                'surname': 'TestSurname',
-                'email': 'test@gmail.com',
-                'pwd': '123'
+                id: '1',
+                name: 'TestName',
+                surname: 'TestSurname',
+                email: 'test@gmail.com',
+                pwd: '123'
             }
         ]);
         expect(result[0].id).toBe('1');
@@ -92,11 +92,11 @@ describe('createUser:', () => {
         const repoFunction = jest.spyOn(repository, 'createUserDB');
         repoFunction.mockResolvedValue([
             {
-                'id': '1',
-                'name': 'TestName',
-                'surname': 'TestSurname',
-                'email': 'test@gmail.com',
-                'pwd': '123'
+                id: '1',
+                name: 'TestName',
+                surname: 'TestSurname',
+                email: 'test@gmail.com',
+                pwd: '123'
             }
         ]);
         const result = await createUser('name', 'surname', 'email', 'pwd');
@@ -109,11 +109,11 @@ describe('createUser:', () => {
         expect(result.length).toBe(1);
         expect(result).toEqual([
             {
-                'id': '1',
-                'name': 'TestName',
-                'surname': 'TestSurname',
-                'email': 'test@gmail.com',
-                'pwd': '123'
+                id: '1',
+                name: 'TestName',
+                surname: 'TestSurname',
+                email: 'test@gmail.com',
+                pwd: '123'
             }
         ]);
     })
@@ -124,11 +124,11 @@ describe('upDataUser:', () => {
         const repoFunction = jest.spyOn(repository, 'upDataUserDB');
         repoFunction.mockResolvedValue([
             {
-                'id': '1',
-                'name': 'TestName',
-                'surname': 'TestSurname',
-                'email': 'test@gmail.com',
-                'pwd': '123'
+                id: '1',
+                name: 'TestName',
+                surname: 'TestSurname',
+                email: 'test@gmail.com',
+                pwd: '123'
             }
         ]);
         const result = await upDataUser('1', 'TestName', 'TestSurname', 'test@gmail.com', '123');
@@ -142,11 +142,11 @@ describe('upDataUser:', () => {
         expect(result).toHaveLength(1);
         expect(result).toEqual([
             {
-                'id': '1',
-                'name': 'TestName',
-                'surname': 'TestSurname',
-                'email': 'test@gmail.com',
-                'pwd': '123'
+                id: '1',
+                name: 'TestName',
+                surname: 'TestSurname',
+                email: 'test@gmail.com',
+                pwd: '123'
             }
         ]);
     })
@@ -157,11 +157,11 @@ describe('deleteUserById:', () => {
         const repoFunction = jest.spyOn(repository, 'deleteUserByIdDB');
         repoFunction.mockResolvedValue([
             {
-                'id': '1',
-                'name': 'TestName',
-                'surname': 'TestSurname',
-                'email': 'test@gmail.com',
-                'pwd': '123'
+                id: '1',
+                name: 'TestName',
+                surname: 'TestSurname',
+                email: 'test@gmail.com',
+                pwd: '123'
             }
         ]);
         const result = await deleteUserById('1');
@@ -170,11 +170,11 @@ describe('deleteUserById:', () => {
         expect(result.length).toBe(1);
         expect(result).toEqual([
             {
-                'id': '1',
-                'name': 'TestName',
-                'surname': 'TestSurname',
-                'email': 'test@gmail.com',
-                'pwd': '123'
+                id: '1',
+                name: 'TestName',
+                surname: 'TestSurname',
+                email: 'test@gmail.com',
+                pwd: '123'
             }
         ]);
     })
