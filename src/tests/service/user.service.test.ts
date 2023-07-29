@@ -52,6 +52,16 @@ describe('getAllUser:', () => {
         expect(result).toHaveLength(2);;
         expect(result.length).toBe(2);;
     })
+    test(('2'), async () => {
+        const repoFunction = jest.spyOn(repository, 'getAllUserDB');
+        repoFunction.mockResolvedValue([]);
+        try {
+            await getAllUser();
+        } catch (error: any) {
+            expect(repoFunction).toHaveBeenCalled();
+            expect(error.message).toBe('БД не заполнена');
+        }
+    })
 })
 
 describe('getUserId:', () => {
@@ -85,6 +95,16 @@ describe('getUserId:', () => {
         expect(result[0].pwd).toBe('123');
         expect(result.length).toBe(1);
     })
+    test(('2'), async () => {
+        const repoFunction = jest.spyOn(repository, 'getUserIdDB');
+        repoFunction.mockResolvedValue([]);
+        try {
+            await getUserId('8');
+        } catch (error: any) {
+            expect(repoFunction).toHaveBeenCalled();
+            expect(error.message).toBe('Такого id нет');
+        }
+    })
 })
 
 describe('createUser:', () => {
@@ -116,6 +136,16 @@ describe('createUser:', () => {
                 pwd: '123'
             }
         ]);
+    })
+    test(('2'), async () => {
+        const repoFunction = jest.spyOn(repository, 'createUserDB');
+        repoFunction.mockResolvedValue([]);
+        try {
+            await createUser('TestName', 'TestSurname', 'test@gmail.com', '123');
+        } catch (error: any) {
+            expect(repoFunction).toHaveBeenCalled();
+            expect(error.message).toBe('Данные не сохранены');
+        }
     })
 })
 
@@ -150,6 +180,16 @@ describe('upDataUser:', () => {
             }
         ]);
     })
+    test(('2'), async () => {
+        const repoFunction = jest.spyOn(repository, 'upDataUserDB');
+        repoFunction.mockResolvedValue([]);
+        try {
+            await upDataUser('1', 'TestName', 'TestSurname', 'test@gmail.com', '123');
+        } catch (error: any) {
+            expect(repoFunction).toHaveBeenCalled();
+            expect(error.message).toBe('Такого id нет');
+        }
+    })
 })
 
 describe('deleteUserById:', () => {
@@ -177,5 +217,15 @@ describe('deleteUserById:', () => {
                 pwd: '123'
             }
         ]);
+    })
+    test(('2'), async () => {
+        const repoFunction = jest.spyOn(repository, 'deleteUserByIdDB');
+        repoFunction.mockResolvedValue([]);
+        try {
+            await deleteUserById('20');
+        } catch (error: any) {
+            expect(repoFunction).toHaveBeenCalled();
+            expect(error.message).toBe('Такого id нет');
+        }
     })
 })
