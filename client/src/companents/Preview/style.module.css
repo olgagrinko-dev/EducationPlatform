@@ -1,0 +1,15 @@
+.preview {
+    display: flex;
+    justify-content: space-between;
+}
+
+.preview .previewInfo p {
+    color: var(--primaty-cyan-dark, #2B788B);
+    font: 700 16px Montserrat;
+}
+
+.preview .previewInfo h1 {
+    color: var(--primaty-black, #000);
+    font: 400 56px Dela Gothic One;
+}
+
