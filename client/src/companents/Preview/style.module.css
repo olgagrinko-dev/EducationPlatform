@@ -3,7 +3,7 @@
     justify-content: space-between;
 }
 
-.preview .previewInfo p {
+.preview .previewInfo .previewAbout {
     color: var(--primaty-cyan-dark, #2B788B);
     font: 700 16px Montserrat;
 }
@@ -11,5 +11,22 @@
 .preview .previewInfo h1 {
     color: var(--primaty-black, #000);
     font: 400 56px Dela Gothic One;
+    width: 600px;
+}
+
+.preview .previewInfo .textInfo {
+    color: var(--primaty-grey-dark, #757575);
+    font: 600 18px Montserrat;
+    width: 450px;
+}
+
+.previewBtn {
+    border-radius: 100px;
+    background: var(--primaty-cyan-light, #C3DCE3);
+    color: #2B788B;
+    font: 700 16px Montserrat;
+    padding: 14px 22px;
+    width: 165px;
+    align-items: center;
 }
 
