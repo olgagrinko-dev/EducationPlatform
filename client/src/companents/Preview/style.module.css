@@ -6,18 +6,22 @@
 .preview .previewInfo .previewAbout {
     color: var(--primaty-cyan-dark, #2B788B);
     font: 700 16px Montserrat;
+    margin-top: 95px;
+    margin-bottom: 25px;
 }
 
 .preview .previewInfo h1 {
     color: var(--primaty-black, #000);
     font: 400 56px Dela Gothic One;
     width: 600px;
+    margin-bottom: 30px;
 }
 
 .preview .previewInfo .textInfo {
     color: var(--primaty-grey-dark, #757575);
     font: 600 18px Montserrat;
     width: 450px;
+    margin-bottom: 32px;
 }
 
 .previewBtn {
@@ -28,5 +32,43 @@
     padding: 14px 22px;
     width: 165px;
     align-items: center;
+    margin-bottom: 50px;
 }
 
+.previewStudentsNumber {
+    display: flex;
+    justify-content: space-between;
+    width: 163px;
+    height: 40px;
+}
+
+.logImg {
+    background-image: url(../assets/Frame\ 2.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 24px;
+    height: 30px;
+}
+
+.numberPlus {
+    background-image: url(../assets/600+.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 130px;
+    height: 40px;
+}
+
+.previewStudents {
+    color: #585858;
+    font: 600 16px Montserrat;
+    margin-left: 50px;
+}
+
+.previewImg {
+    background-image: url(../assets/Frame\ 1.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 933px;
+    height: 600px;
+    margin-top: 110px;
+}

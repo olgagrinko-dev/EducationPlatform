@@ -10,10 +10,13 @@ function Preview() {
                 <div className={style.previewBtn}>About platform</div>
 
                 <div className={style.previewStudentsNumber}>
-                    <div className={style.logImg}></div>
-                    <div className={style.numberPlus}></div>
+                    {/* <div> */}
+                        <div className={style.logImg}></div>
+                        <div className={style.numberPlus}></div>
+                    {/* </div> */}
+                  
                 </div>
-                <p className={style.previewStudents}>Students</p>
+                <div className={style.previewStudents}>Students</div>
             </div>
             <div className={style.previewImg}></div>
         </div>
