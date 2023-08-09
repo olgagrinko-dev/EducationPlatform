@@ -1,6 +1,7 @@
 .preview {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .preview .previewInfo .previewAbout {
@@ -30,8 +31,8 @@
     color: #2B788B;
     font: 700 16px Montserrat;
     padding: 14px 22px;
-    width: 165px;
-    align-items: center;
+    width: 200px;
+    text-align: center;
     margin-bottom: 50px;
 }
 
@@ -43,7 +44,7 @@
 }
 
 .logImg {
-    background-image: url(../assets/Frame\ 2.svg);
+    background-image: url(./assets/Frame\ 2.svg);
     background-repeat: no-repeat;
     background-size: contain;
     width: 24px;
@@ -51,7 +52,7 @@
 }
 
 .numberPlus {
-    background-image: url(../assets/600+.svg);
+    background-image: url(./assets/600+.svg);
     background-repeat: no-repeat;
     background-size: contain;
     width: 130px;
@@ -65,10 +66,136 @@
 }
 
 .previewImg {
-    background-image: url(../assets/Frame\ 1.svg);
+    background-image: url(./assets/Frame\ 1.svg);
     background-repeat: no-repeat;
     background-size: contain;
-    width: 933px;
-    height: 600px;
+    width: 550px;
+    height: 400px;
     margin-top: 110px;
+}
+
+.learn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.learn .img {
+    background-image: url(./assets/image\ 8.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 580px;
+    height: 445px;
+}
+
+.learn .info h1 {
+    color: var(--primaty-black, #000);
+    font: 400 48px Dela Gothic One;
+    width: 480px;
+    margin-bottom: 30px;
+}
+
+.learn .info p {
+    color: var(--primaty-grey-dark, #757575);
+    font: 600 18px Montserrat;
+    width: 480px;
+    margin-bottom: 30px;
+}
+
+.learn .icons {
+    display: flex;
+    gap: 15px;
+}
+
+.learn .icons1 {
+    background-image: url(./assets/Group\ 11.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 129px;
+    height: 112px;
+}
+
+.learn .icons2 {
+    background-image: url(./assets/Group\ 10.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 172px;
+    height: 112px;
+}
+
+.knowledge {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.knowledge .info h1 {
+    color: var(--primaty-black, #000);
+    font: 400 48px Dela Gothic One;
+    margin-bottom: 30px;
+}
+
+.knowledge .info p {
+    color: var(--primaty-grey-dark, #757575);
+    font: 600 18px Montserrat;
+    width: 400px; 
+    margin-bottom: 35px;
+}
+
+.knowledge .info .btnKnow {
+    border-radius: 100px;
+    background: var(--primaty-cyan-light, #C3DCE3);
+    color: #2B788B;
+    font: 700 16px Montserrat;
+    width: 150px;
+    height: 45px;
+    padding: 14px 22px;
+    text-align: center;
+}
+
+.knowledge .img {
+    background-image: url(./assets/image\ 2.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 580px;
+    height: 485px;
+}
+
+.progress {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.progress .img {
+    background-image: url(./assets/image\ 1.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 680px;
+    height: 410px;
+}
+
+.progress .info h1 {
+    color: var(--primaty-black, #000);
+    font: 400 48px Dela Gothic One;
+    margin-bottom: 35px;
+    width: 474px;
+}
+
+.progress .info p {
+    color: var(--primaty-grey-dark, #757575);
+    font: 600 18px Montserrat;
+    margin-bottom: 30px;
+    width: 396px;
+}
+
+.progress .info .btnProg {
+    border-radius: 100px;
+    background: var(--primaty-cyan-light, #C3DCE3);
+    color: var(--primaty-cyan-dark, #2B788B);
+    font: 700 16px Montserrat;
+    width: 150px;
+    height: 45px;
+    padding: 14px 0;
+    text-align: center;  
 }
