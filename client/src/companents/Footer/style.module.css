@@ -1,0 +1,33 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.navigation .content {
+    display: flex;
+    flex-direction: row;
+}
+
+.navigation .content p {
+    color: var(--primaty-grey-dark, #757575);
+    font: 600 14px Montserrat;
+}
+
+.navigation .name p {
+    color: var(--primaty-grey-dark, #757575);
+    font: 600 14px Montserrat;
+}
+
+hr {
+    stroke-width: 1.2px;
+    stroke: var(--primaty-grey-medium, #E0E0E0);    
+}
+

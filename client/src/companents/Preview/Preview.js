@@ -46,10 +46,7 @@ function Preview() {
                     <p>Save statistics on your achievements and mistakes</p>
                     <div className={style.btnProg}>Statistics →</div>
                 </div>
-
             </div>
-
-
         </div>
     )
 }
