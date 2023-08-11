@@ -2,13 +2,11 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
 }
 
 .navigation {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 20px;
 }
 
 .navigation .content {
@@ -19,15 +17,67 @@
 .navigation .content p {
     color: var(--primaty-grey-dark, #757575);
     font: 600 14px Montserrat;
+    right: 0;
+    margin-left: 30px;
+}
+
+.navigation .name {
+    display: flex;
+    flex-direction: row;
 }
 
 .navigation .name p {
     color: var(--primaty-grey-dark, #757575);
     font: 600 14px Montserrat;
+    left: 0;
+    margin-right: 30px;
 }
 
-hr {
-    stroke-width: 1.2px;
-    stroke: var(--primaty-grey-medium, #E0E0E0);    
+.line {
+    height: 1.2px;
+    background: var(--primaty-grey-medium, #E0E0E0);
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
+.navigLink {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigLink .linkImg {
+    display: flex;
+    flex-direction: row;
+}
+
+.linkImg .imgGit {
+    background-image: url(./assets/Frame\ 1\ foot.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 30px;
+    height: 24px;
+    margin-right: 30px;
+}
+
+.linkImg .imgGT {
+    background-image: url(./assets/Frame\ 2\ foot.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 30px;
+    height: 24px;
+    margin-right: 30px;
+}
+
+.linkImg .imgYouTube {
+    background-image: url(./assets/Frame\ 3\ foot.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 30px;
+    height: 24px;
+    margin-right: 30px;
+}
+
+.navigLink p {
+    color: var(--primaty-grey-dark, #757575);
+    font: 600 12px Montserrat;
+}

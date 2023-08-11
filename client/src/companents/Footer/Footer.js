@@ -17,9 +17,9 @@ function Footer() {
                 </div>
             </div>
 
-            <hr />
+            <div className={style.line}></div>
 
-            <div className={style.navigImg}>
+            <div className={style.navigLink}>                
                 <div className={style.linkImg}>
                     <div className={style.imgGit}></div>
                     <div className={style.imgGT}></div>
