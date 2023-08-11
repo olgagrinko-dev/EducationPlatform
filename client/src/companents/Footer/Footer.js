@@ -3,7 +3,8 @@ import style from './style.module.css';
 function Footer() {
     return (
         <div className={style.wrapper}>
-            <div className={style.navigation}>
+            
+            <div className={style.navigation}>                
                 <div className={style.content}>
                     <p>Home</p>
                     <p>Textbook</p>
