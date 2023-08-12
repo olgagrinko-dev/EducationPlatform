@@ -2,8 +2,7 @@ import style from './style.module.css';
 
 function Footer() {
     return (
-        <div className={style.wrapper}>
-            
+        <div className={style.wrapper}>            
             <div className={style.navigation}>                
                 <div className={style.content}>
                     <p>Home</p>
@@ -17,7 +16,7 @@ function Footer() {
                     <p>Marcus</p>
                 </div>
             </div>
-
+            
             <div className={style.line}></div>
 
             <div className={style.navigLink}>                
