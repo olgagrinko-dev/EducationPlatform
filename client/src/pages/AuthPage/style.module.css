@@ -1,0 +1,44 @@
+.authPage {
+    display: flex;
+    justify-content: space-between;
+    margin: 6% auto;
+    width: 1220px;
+}
+
+.authPage .info {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.authPage .info h1 {
+    color: var(--primaty-black, #000);
+    font: 400 56px Dela Gothic One;
+}
+
+.authPage .info input {
+    width: 520px;
+    padding: 10px; 
+    color: var(--gray-gray-5, #ADB5BD);
+    font: 400 20px Open Sans;
+    border-radius: 2px;
+    border: 1px solid var(--gray-gray-4, #CED4DA);
+}
+
+.authPage .info .btn {
+    border-radius: 100px;
+    background: var(--primaty-cyan-dark, #2B788B);
+    color: #FFF;
+    text-align: center;
+    font: 700 16px Montserrat;
+    width: 110px;
+    padding: 14px;
+}
+
+.authPageImg {
+    background-image: url(./assets/image\ 33.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 480px;
+    height: 320px;
+}

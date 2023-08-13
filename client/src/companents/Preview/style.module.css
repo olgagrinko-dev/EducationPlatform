@@ -24,15 +24,13 @@
 .preview .previewInfo h1 {
     color: var(--primaty-black, #000);
     font: 400 56px Dela Gothic One;
-    width: 600px;
-    margin-bottom: 30px;
+    width: 600px;  
 }
 
 .preview .previewInfo .textInfo {
     color: var(--primaty-grey-dark, #757575);
     font: 600 18px Montserrat;
-    width: 450px;
-    margin-bottom: 32px;
+    width: 450px;   
 }
 
 .previewBtn {
@@ -42,8 +40,7 @@
     font: 700 16px Montserrat;
     width: 200px;
     text-align: center;
-    padding: 14px 22px;
-    margin-bottom: 50px;
+    padding: 14px 22px;   
 }
 
 .previewStudentsNumber {
@@ -110,15 +107,13 @@
 .learn .info h1 {
     color: var(--primaty-black, #000);
     font: 400 48px Dela Gothic One;
-    width: 480px;
-    margin-bottom: 30px;
+    width: 480px;   
 }
 
 .learn .info p {
     color: var(--primaty-grey-dark, #757575);
     font: 600 18px Montserrat;
-    width: 480px;
-    margin-bottom: 30px;
+    width: 480px;  
 }
 
 .learn .icons {
@@ -158,15 +153,13 @@
 
 .knowledge .info h1 {
     color: var(--primaty-black, #000);
-    font: 400 48px Dela Gothic One;
-    margin-bottom: 30px;
+    font: 400 48px Dela Gothic One;  
 }
 
 .knowledge .info p {
     color: var(--primaty-grey-dark, #757575);
     font: 600 18px Montserrat;
-    width: 400px;
-    margin-bottom: 35px;
+    width: 400px;   
 }
 
 .knowledge .info .btnKnow {
@@ -213,15 +206,13 @@
 
 .progress .info h1 {
     color: var(--primaty-black, #000);
-    font: 400 48px Dela Gothic One;
-    margin-bottom: 35px;
+    font: 400 48px Dela Gothic One;   
     width: 474px;
 }
 
 .progress .info p {
     color: var(--primaty-grey-dark, #757575);
-    font: 600 18px Montserrat;
-    margin-bottom: 30px;
+    font: 600 18px Montserrat;   
     width: 396px;
 }
 
