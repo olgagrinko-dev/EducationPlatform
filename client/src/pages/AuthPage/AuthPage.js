@@ -1,5 +1,5 @@
-import Footer from "../../companents/Footer/Footer";
 import Header from "../../companents/Header/Header";
+import Footer from "../../companents/Footer/Footer";
 import style from "./style.module.css";
 
 function AuthPage() {
