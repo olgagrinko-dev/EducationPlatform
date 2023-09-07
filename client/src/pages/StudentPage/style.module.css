@@ -1,0 +1,85 @@
+.header {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 1220px;
+    margin: 6% auto;
+    border-radius: 14px;
+    background-color: #FFF;    
+    padding: 20px 0;
+}
+
+.header .img {
+    background-image: url(./assets/fluent_hat-graduation-24-filled.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 32px;
+    height: 32px;
+}
+
+.header h1 {
+    color: var(--primaty-black, #000);
+    font: 400 26px Dela Gothic One;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 14px;
+    background: #FFF;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: auto;
+}
+
+.info .item {
+    color: #000;
+    font: 400 32px Dela Gothic One;
+    text-align: center;
+}
+
+.info .text {
+    color: var(--primaty-grey-dark, #757575);
+    font-family: 500 16px Montserrat;
+    width: 516px;
+    height: 72px;   
+}
+
+.img_1,
+.img_3 {
+    background-image: url(./assets/Frame\ 35270.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 14px 0 0 14px;
+    width: 337px;
+    height: 216px;
+
+}
+
+.img_2 {
+    background-image: url(./assets/image\ 55.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 14px 0 0 14px;
+    width: 337px;
+    height: 216px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;    
+    margin: auto;
+    width: 926px;
+    gap: 40px;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 54px;   
+}

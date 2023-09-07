@@ -1,6 +1,6 @@
-import Footer from "../../companents/Footer/Footer";
 import Header from "../../companents/Header/Header";
 import Preview from "../../companents/Preview/Preview";
+import Footer from "../../companents/Footer/Footer";
 
 function HomePage() {
     return (<div>
