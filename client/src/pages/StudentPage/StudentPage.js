@@ -3,6 +3,9 @@ import Footer from "../../companents/Footer/Footer";
 import style from "./style.module.css";
 import Pagination from '@mui/material/Pagination';
 
+import axios from 'axios';
+import { useState, useEfect } from 'react';
+
 function StudentPage() {
     const array = [{ img: 'img_1', header: 'JavaScript', text: 'JavaScript is a practical course where students learn the basics of JavaScript. It covers variables, operators, conditionals, loops, functions, and data manipulation.' },
     { img: 'img_2', header: 'C#', text: 'TypeScript is a course that provides an introduction to TypeScript. Students will learn about TypeScripts key features, such as type annotations, interfaces, classes, and modules' },
@@ -20,6 +23,14 @@ function StudentPage() {
         </div>
     </div>)
 
+    // const [list, setlist] = useState(); //стейт где хранится вся наша информация
+    // const [countPage] = useState(3); //количество элементов которые будут показываться на каждой страничке
+    
+    // const lastIndex = currentPage * countPage; // индекс последней странички
+    // const firstIndex = lastIndex - countPage;
+    // const currentIndex = list.slice(firstIndex, lastIndex)
+
+
     return (
         <div>
             <Header />
@@ -30,11 +41,10 @@ function StudentPage() {
             <div className={style.main}>
                 {result}
             </div>
-            <Pagination count={10} className={style.pagination} />
+            {/* <Pagination count={array.length / countPage} page = {list} onChange={()=> setlist} className={style.pagination} /> */}
 
             <Footer />
         </div>
-
     )
 }
 
